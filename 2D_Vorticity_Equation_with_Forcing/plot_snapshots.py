@@ -27,7 +27,7 @@ def main(filename, start, count, output):
     title_func = lambda sim_time: 't = {:.3f}'.format(sim_time)
     savename_func = lambda write: 'vorticity_{:06}.png'.format(write)
     # Layout
-    image = plot_tools.Box(4, 2)  # Aspect ratio (width, height)
+    image = plot_tools.Box(2, 2)  # Aspect ratio (width, height)
     pad = plot_tools.Frame(0.2, 0, 0, 0)
     margin = plot_tools.Frame(0.2, 0.1, 0, 0)
 
