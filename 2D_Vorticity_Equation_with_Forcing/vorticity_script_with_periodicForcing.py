@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 Lx, Lz = 2 * np.pi, 2 * np.pi
 Nx, Nz = 128,128
 dealias = 3/2
-stop_sim_time = 4.0
+stop_sim_time = 10
 timestepper = d3.RK222
 max_timestep = 0.01
 dtype = np.float64
@@ -40,7 +40,7 @@ tau = dist.Field(name='tau')
 F = dist.Field(name='F', bases=(xbasis,zbasis))
 
 # Substitutions
-nu = 1 
+nu = 0.01 
 x, z = dist.local_grids(xbasis, zbasis)
 ex, ez = coords.unit_vector_fields(dist)
 F['g'] = 0.5 * np.sin(x) * np.sin(z)
