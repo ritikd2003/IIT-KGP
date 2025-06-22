@@ -8,7 +8,7 @@
 
 ---
 
-## 🌟 Overview
+## Overview
 
 This repository contains the simulation codes developed during my **Summer Internship 2024** at **IIT Kharagpur**, under the guidance of **Dr. Vishwanath Shukla**. The focus was on exploring **2D turbulence** through spectral numerical methods using the **Dedalus** framework.
 
